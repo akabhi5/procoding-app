@@ -4,7 +4,7 @@ import SideBar from "./components/SideBar/SideBar";
 export default function Home() {
   return (
     <>
-      <section class="grid grid-cols-12 gap-4 mt-4 px-3">
+      <section class="grid grid-cols-12 gap-4">
         <aside className="hidden md:block col-span-3 content-center">
           <div className="top-20 sticky">
             <SideBar />

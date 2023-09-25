@@ -14,9 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={alata.className}>
+      <body className={`${alata.className} `}>
         <NavBar />
-        {children}
+        <section className="px-3 mt-4 min-h-screen">{children}</section>
         <Footer />
       </body>
     </html>

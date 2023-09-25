@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100 border-b-4 border-indigo-500 shadow-lg">
+    <div className="navbar bg-base-100 border-b-4 border-indigo-500 shadow-lg top-0 sticky z-50">
       <div className="flex-1">
         <Image
           src="https://cdn.procoding.org/assets/procoding.png"

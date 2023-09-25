@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import "./globals.css";
 import { Alata } from "next/font/google";
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={alata.className}>
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );

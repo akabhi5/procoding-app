@@ -13,7 +13,7 @@ const NavBar = () => {
             alt="ProCoding.org"
           />
         </Link>
-        <Link href="/" className="btn btn-ghost normal-case text-xl px-0">
+        <Link href="/" className="normal-case text-xl px-0 font-extrabold">
           ProCoding
         </Link>
       </div>

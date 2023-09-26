@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import BirgerIcon from "../../../public/icons/burger-menu.svg";
 
 const NavBar = () => {
   return (
@@ -17,30 +18,61 @@ const NavBar = () => {
           ProCoding
         </Link>
       </div>
-      <div className="flex-none">
+
+      {/* Normal menu */}
+      <div className="flex-none hidden md:block">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <Link href="/cprograms">C Programs</Link>
-          </li>
-          <li>
-            <Link href="/python">Python</Link>
-          </li>
-          <li>
-            <Link href="/django">Django</Link>
-          </li>
-          <li>
-            <Link href="/datastructures">Data Structures</Link>
-          </li>
-          <li>
-            <Link href="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact us</Link>
-          </li>
+          <MenuItems />
         </ul>
       </div>
+      {/* Normal menu end */}
+
+      {/* Hamburger menu */}
+      <div className="block md:hidden">
+        <div className="drawer drawer-end">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            {/* Page content here */}
+            <label htmlFor="my-drawer" className="btn btn-square drawer-button">
+              <Image src={BirgerIcon} alt="Menu" height={30} width={30} />
+            </label>
+          </div>
+          <div className="drawer-side">
+            <label htmlFor="my-drawer" className="drawer-overlay"></label>
+            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+              <MenuItems />
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* Hamburger menu end */}
     </div>
   );
 };
 
 export default NavBar;
+
+const MenuItems = () => {
+  return (
+    <>
+      <li>
+        <Link href="/cprograms">C Programs</Link>
+      </li>
+      <li>
+        <Link href="/python">Python</Link>
+      </li>
+      <li>
+        <Link href="/django">Django</Link>
+      </li>
+      <li>
+        <Link href="/datastructures">Data Structures</Link>
+      </li>
+      <li>
+        <Link href="/blog">Blog</Link>
+      </li>
+      <li>
+        <Link href="/contact">Contact us</Link>
+      </li>
+    </>
+  );
+};

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${alata.className} `}>
         <NavBar />
-        <section className="px-3 mt-4 min-h-screen">{children}</section>
+        <section className="px-3 mt-4 main-section">{children}</section>
         <Footer />
       </body>
     </html>

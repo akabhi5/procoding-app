@@ -7,9 +7,9 @@ const page = () => {
 
         <p>
           C language is a powerful general-purpose programming language. It can
-          be used to do low-level programming (drivers and kernels). It is
-          generally used to develop softwares like operating systems, databases,
-          compilers and so on.
+          be used to do low-level programming &#40;drivers and kernels&#41;. It
+          is generally used to develop softwares like operating systems,
+          databases, compilers and so on.
         </p>
 
         <p>

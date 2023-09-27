@@ -1,3 +1,4 @@
+import NextTopLoader from "nextjs-toploader";
 import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import "./globals.css";
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${alata.className} `}>
+        <NextTopLoader showSpinner={false} color="#00FF00" />
         <NavBar />
         <section className="px-3 mt-4 main-section">{children}</section>
         <Footer />
